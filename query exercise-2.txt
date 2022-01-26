@@ -1,0 +1,7 @@
+Exercises
+- Find the average SurfaceArea of all countries
+- Max Life Expectancy
+- Min GNP
+- SUM of Population from all countries
+- Surface Area Grouped by CODE
+- Count the names with indepedent year not being null

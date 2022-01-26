@@ -9,10 +9,6 @@ CREATE TABLE movies(
     time_added DATETIME DEFAULT now()
 );
 
-INSERT INTO movies (name) VALUES ('Kate');
-INSERT INTO movies (name) VALUES ('Seven');
-DESCRIBE movies;
-
 CREATE TABLE rating(
 	rating_id INT AUTO_INCREMENT,
 	PRIMARY KEY (rating_id),
@@ -20,8 +16,6 @@ CREATE TABLE rating(
     FOREIGN KEY (movie_id) REFERENCES movies(movie_id),
 	name VARCHAR(10) UNIQUE NOT NULL
 );
-
-DESCRIBE rating;
 
 CREATE TABLE genre(
     genre_id INT AUTO_INCREMENT,
@@ -33,7 +27,6 @@ CREATE TABLE genre(
     name VARCHAR(10) UNIQUE NOT NULL
 );
 
-DESCRIBE genre;
 
 CREATE TABLE viewers (
 viewer_id INT AUTO_INCREMENT PRIMARY KEY, 
